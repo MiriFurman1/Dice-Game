@@ -25,8 +25,8 @@ function App() {
   const [score, setScore] = useState(0)
   const [player1Score, setPlayer1Score] = useState(0)
   const [player2Score, setPlayer2Score] = useState(0)
-  const [player1Wins,setPlayer1Wins]=useState(0)
-  const [player2Wins,setPlayer2Wins]=useState(0)
+  // const [player1Wins,setPlayer1Wins]=useState(0)
+  // const [player2Wins,setPlayer2Wins]=useState(0)
   const [winValue,setWinValue]=useState(100)
 
 
