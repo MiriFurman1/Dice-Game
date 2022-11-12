@@ -6,7 +6,7 @@ import ShowPlayerScore from './ShowPlayer1Score';
 import {gameOver} from './HandleWin'
 import HandleWin from './HandleWin';
 import Welcome from './Welcome';
-import WinsCounter from './WinsCounter';
+// import WinsCounter from './WinsCounter';
 
 
 
@@ -28,6 +28,7 @@ function App() {
   const [player1Wins,setPlayer1Wins]=useState(0)
   const [player2Wins,setPlayer2Wins]=useState(0)
   const [winValue,setWinValue]=useState(100)
+
 
 
   function handleRoll() {
@@ -68,14 +69,13 @@ function App() {
   }
 
   function newGameHandler(){
-window.location.reload()
+    window.location.reload()
     // setRoll1(0)
     // setRoll2(0)
     // setActivePlayer("player1")
     // setScore(0)
     // setPlayer1Score(0)
     // setPlayer2Score(0)
-    // ChangeGameOverFalse()
   }
 
 
@@ -88,7 +88,7 @@ window.location.reload()
         <div className='playerBox'>
           <img src='img/stich.png' alt=""></img> <br />
           player 1
-          {/* <WinsCounter win={player1Wins}/> */}
+          {/* <WinsCounter win={player1Wins} setPlayer1Wins={setPlayer1Wins} setPlayer2Wins={setPlayer2Wins}/> */}
           <ShowPlayerScore score={player1Score} />
         </div>
         <div className='gameBox'>
@@ -103,7 +103,7 @@ window.location.reload()
         <div className='playerBox'>
           <img src='img/luigi.png' alt=""></img> <br />
           player 2
-          {/* <WinsCounter win={player2Wins}/> */}
+          {/* <WinsCounter win={player2Wins} setPlayer1Wins={setPlayer1Wins} setPlayer2Wins={setPlayer2Wins}/> */}
           <ShowPlayerScore score={player2Score} />
         </div>
 
