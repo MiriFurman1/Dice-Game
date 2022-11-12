@@ -98,7 +98,7 @@ function App() {
 
           <button onClick={handleRoll} >Roll dice</button>
           <button onClick={handleHold}>Hold</button>
-          <HandleWin winValue={winValue} player1Score={player1Score} player2Score={player2Score} score={score} activePlayer={activePlayer} setPlayer1Wins={setPlayer1Wins} setPlayer2Wins={setPlayer2Wins} player2Wins={player2Wins}/>
+          <HandleWin winValue={winValue} player1Score={player1Score} player2Score={player2Score} score={score} activePlayer={activePlayer} />
         </div>
         <div className='playerBox'>
           <img src='img/luigi.png' alt=""></img> <br />
